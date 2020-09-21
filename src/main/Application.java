@@ -13,6 +13,7 @@ public class Application {
 		
 		Box box = new Box();
 		
+		
 		System.err.println(box.toString());
 
 	}
