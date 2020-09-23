@@ -23,6 +23,7 @@ public class ClassTransform {
 		
 		ccons.setBody("this.id = 40;");
 		
+		
 //		CtConstructor cstructor = CtNewConstructor.defaultConstructor(cc);
 //		
 //		cstructor.setBody("this.id = 50;");
