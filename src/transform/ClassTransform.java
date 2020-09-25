@@ -16,12 +16,12 @@ public class ClassTransform {
 		ClassPool pool = ClassPool.getDefault();
 				
 		CtClass cc = pool.get("domain.Box");
+			
+		CtConstructor ccons = cc.getDeclaredConstructor(null);
+//		cc.removeConstructor(ccons);
 		
-				
-//		CtConstructor ccons = cc.getDeclaredConstructor(null);
-		//cc.removeConstructor(ccons);
+		ccons.setBody("this.id = 40;");
 		
-//		ccons.setBody("this.id = 40;");
 		
 //		CtConstructor cstructor = CtNewConstructor.defaultConstructor(cc);
 //		
